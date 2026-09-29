@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="Express Шина — шиномонтаж у Кривому Розі. Шиномонтаж, балансування, ремонт і правка дисків, TPMS, обслуговування автокондиціонерів та інші роботи.">
+  <title>Express Шина — шиномонтаж у Кривому Розі</title>
+  <style>
+    :root{--red:#ef1d1d;--blue:#149dff;--black:#050505;--ink:#111;--white:#f5f5f2;--muted:#a9a9a9;--line:#272727;--card:#101010}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--black);color:var(--white);font-family:Inter,Arial,Helvetica,sans-serif;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.11;background:repeating-linear-gradient(135deg,transparent 0 18px,#fff 19px 20px,transparent 21px 44px);mix-blend-mode:screen;z-index:0}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto;position:relative;z-index:1}
+    .top{position:sticky;top:0;z-index:20;background:rgba(5,5,5,.9);backdrop-filter:blur(12px);border-bottom:1px solid #242424}
+    nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-weight:1000;letter-spacing:-1px;font-size:27px}.logo i{color:var(--red);font-style:normal}.navlinks{display:flex;gap:25px;color:#ccc;font-weight:800;font-size:14px}.navlinks a:hover{color:#fff}.navphone{background:var(--red);padding:12px 18px;border-radius:7px;font-weight:1000;box-shadow:0 0 25px rgba(239,29,29,.25)}
+    .hero{padding:35px 0 0}.heroGrid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #333;border-left:4px solid var(--red);padding:9px 13px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1.3px;background:#0b0b0b}.dot{width:8px;height:8px;background:#ff1e1e;border-radius:50%;box-shadow:0 0 13px #ff1e1e}.hero h1{font-size:clamp(46px,7vw,86px);line-height:.88;margin:22px 0 20px;font-weight:1000;letter-spacing:-4px;text-transform:uppercase}.hero h1 span{color:var(--red)}.hero p{font-size:19px;line-height:1.55;color:#c8c8c8;max-width:650px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 21px;border-radius:8px;font-weight:950;border:1px solid #333;background:#151515}.btn.primary{background:var(--red);border-color:var(--red)}.btn.blue{border-color:#1b9dff;color:#dff3ff}.btn:hover{transform:translateY(-1px)}
+    .heroVisual{position:relative}.heroVisual:before{content:"";position:absolute;inset:8% -8% 8% 8%;background:linear-gradient(135deg,rgba(239,29,29,.25),transparent 45%,rgba(20,157,255,.2));filter:blur(30px);z-index:-1}.banner{width:100%;display:block;border:1px solid #2b2b2b;border-radius:12px;box-shadow:0 25px 80px rgba(0,0,0,.55)}
+    .ticker{margin-top:34px;border-top:1px solid #292929;border-bottom:1px solid #292929;overflow:hidden;background:#080808}.tickerInner{display:flex;gap:42px;white-space:nowrap;padding:14px 0;font-size:13px;font-weight:1000;text-transform:uppercase;letter-spacing:1.4px}.ticker b{color:var(--red)}
+    section{padding:95px 0}.sectionHead{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:35px}.kicker{color:var(--red);font-size:12px;font-weight:1000;text-transform:uppercase;letter-spacing:2px}.sectionHead h2{font-size:clamp(34px,5vw,58px);line-height:.95;margin:8px 0 0;letter-spacing:-2px}.sectionHead p{max-width:470px;color:#a8a8a8;line-height:1.6;margin:0}
+    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.service{min-height:180px;background:linear-gradient(145deg,#151515,#0a0a0a);border:1px solid #2a2a2a;padding:23px;position:relative;overflow:hidden;border-radius:10px}.service:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;right:-55px;bottom:-55px;background:rgba(239,29,29,.12)}.service:nth-child(3n):after{background:rgba(20,157,255,.12)}.num{font-size:12px;color:#666;font-weight:1000}.service h3{font-size:20px;margin:35px 0 9px}.service p{color:#999;line-height:1.5;font-size:14px;margin:0}
+    .feature{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:stretch}.featureBox{border:1px solid #292929;background:#0c0c0c;border-radius:12px;padding:34px;position:relative;overflow:hidden}.featureBox.red{background:linear-gradient(145deg,#1b0505,#0c0c0c);border-color:#4a1515}.featureBox.blue{background:linear-gradient(145deg,#03111c,#0c0c0c);border-color:#123b52}.featureTitle{font-size:clamp(35px,5vw,58px);font-weight:1000;line-height:.92;text-transform:uppercase;letter-spacing:-2px}.featureTitle .redText{color:var(--red)}.featureTitle .blueText{color:var(--blue)}.featureBox p{color:#aaa;line-height:1.6;max-width:600px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.chip{border:1px solid #363636;padding:8px 10px;border-radius:99px;color:#ddd;font-size:12px;font-weight:800}
+    .gallery{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-auto-rows:250px;gap:12px}.photo{overflow:hidden;border-radius:10px;border:1px solid #2a2a2a;background:#151515}.photo:first-child{grid-row:span 2}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:.35s}.photo:hover img{transform:scale(1.04)}
+    .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.review{background:#0e0e0e;border:1px solid #282828;border-radius:10px;padding:24px}.stars{color:#fff;font-size:16px;letter-spacing:3px}.review p{color:#c6c6c6;line-height:1.65;font-size:14px}.review b{font-size:13px}.review small{color:#777}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contactCard{border:1px solid #2b2b2b;border-radius:12px;background:#0d0d0d;padding:30px}.contactRow{display:flex;gap:15px;align-items:flex-start;padding:17px 0;border-bottom:1px solid #252525}.contactRow:last-child{border:0}.icon{width:42px;height:42px;border-radius:8px;background:#181818;display:grid;place-items:center;font-weight:1000}.contactRow h4{margin:0 0 5px;font-size:13px;color:#777;text-transform:uppercase;letter-spacing:1px}.contactRow p{margin:0;font-size:18px;font-weight:900}.map{width:100%;height:100%;min-height:390px;border:0;border-radius:12px;filter:grayscale(.7) contrast(1.15)}
+    footer{border-top:1px solid #292929;padding:28px 0 45px;color:#777;font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px}.foot strong{color:#ddd}
+    .floating{position:fixed;right:18px;bottom:18px;z-index:30;display:flex;gap:9px}.float{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-weight:1000;box-shadow:0 8px 30px rgba(0,0,0,.5);border:1px solid #333}.call{background:var(--red)}.tg{background:#0b5d8e}
+    @media(max-width:900px){.navlinks{display:none}.heroGrid,.feature,.contact{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:210px}.photo:first-child{grid-row:span 1}.reviews{grid-template-columns:1fr}.hero{padding-top:20px}.hero h1{letter-spacing:-2px}.map{min-height:300px}}
+    @media(max-width:560px){nav{height:62px}.navphone{padding:10px 12px;font-size:13px}.hero h1{font-size:48px}.hero p{font-size:16px}.services{grid-template-columns:1fr}.gallery{grid-template-columns:1fr;grid-auto-rows:240px}.sectionHead{display:block}.sectionHead p{margin-top:15px}.floating{right:12px;bottom:12px}.float{width:52px;height:52px}}
+  </style>
+</head>
+<body>
+  <header class="top"><div class="wrap"><nav>
+    <a class="logo" href="#top">EXPRESS <i>ШИНА</i></a>
+    <div class="navlinks"><a href="#services">Послуги</a><a href="#gallery">Фото</a><a href="#reviews">Відгуки</a><a href="#contacts">Контакти</a></div>
+    <a class="navphone" href="tel:+380967124878">+380 96 712 48 78</a>
+  </nav></div></header>
+
+  <main id="top">
+    <section class="hero"><div class="wrap heroGrid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Кривий Ріг · вул. Вільної Ічкерії, 6а</div>
+        <h1>ШИНОМОНТАЖ<br><span>EXPRESS ШИНА</span></h1>
+        <p>Шиномонтаж і роботи з колесами для легкових авто та бусів. Балансування, ремонт і правка дисків, TPMS, а також обслуговування автомобільних кондиціонерів.</p>
+        <div class="actions"><a class="btn primary" href="tel:+380967124878">Зателефонувати</a><a class="btn blue" href="https://maps.app.goo.gl/89UtQjWbxdPFgNrV7?g_st=ic" target="_blank" rel="noopener">Прокласти маршрут</a></div>
+      </div>
+      <div class="heroVisual"><img class="banner" src="assets/banner.jpeg" alt="Express Шина — шиномонтаж, TPMS та обслуговування кліматичних систем"></div>
+    </div></section>
+
+    <div class="ticker"><div class="wrap"><div class="tickerInner"><span><b>●</b> ШИНОМОНТАЖ</span><span>БАЛАНСУВАННЯ</span><span><b>●</b> TPMS</span><span>ПРАВКА ДИСКІВ</span><span><b>●</b> АВТОКОНДИЦІОНЕРИ</span><span>08:00 — 19:00</span></div></div></div>
+
+    <section id="services"><div class="wrap">
+      <div class="sectionHead"><div><div class="kicker">Що робимо</div><h2>Послуги без<br>зайвих слів.</h2></div><p>Основні роботи сервісу за інформацією з картки та матеріалами Express Шина. Перед візитом можна зателефонувати й уточнити ціну та час.</p></div>
+      <div class="services">
+        <article class="service"><div class="num">01</div><h3>Шиномонтаж</h3><p>Перевзування та обслуговування коліс для легкових авто і бусів.</p></article>
+        <article class="service"><div class="num">02</div><h3>Балансування</h3><p>Балансування коліс після монтажу або за появи вібрацій.</p></article>
+        <article class="service"><div class="num">03</div><h3>Правка дисків</h3><p>Роботи з дисками та усунення деформацій.</p></article>
+        <article class="service"><div class="num">04</div><h3>Ремонт шин</h3><p>Ремонт проколів та інших пошкоджень коліс.</p></article>
+        <article class="service"><div class="num">05</div><h3>TPMS</h3><p>Діагностика та робота з датчиками контролю тиску в шинах.</p></article>
+        <article class="service"><div class="num">06</div><h3>Диски</h3><p>Підготовка та порошкове фарбування дисків.</p></article>
+        <article class="service"><div class="num">07</div><h3>Автокондиціонер</h3><p>Обслуговування та заправка автомобільних кондиціонерів.</p></article>
+        <article class="service"><div class="num">08</div><h3>Автосервіс</h3><p>Заміна мастила, колодок та інші роботи — за попереднім уточненням.</p></article>
+      </div>
+    </div></section>
+
+    <section><div class="wrap feature">
+      <div class="featureBox red"><div class="kicker">Контроль коліс</div><div class="featureTitle">TPMS<br><span class="redText">ДІАГНОСТИКА</span></div><p>Окремий акцент сервісу — робота з системами контролю тиску в шинах та датчиками TPMS.</p><div class="chips"><span class="chip">Датчики</span><span class="chip">Діагностика</span><span class="chip">Ініціалізація</span></div></div>
+      <div class="featureBox blue"><div class="kicker">Комфорт в авто</div><div class="featureTitle">АВТО<br><span class="blueText">КЛІМАТ</span></div><p>Обслуговування автомобільних кондиціонерів. Заправка та перевірка роботи системи.</p><div class="chips"><span class="chip">Кондиціонери</span><span class="chip">Заправка</span><span class="chip">Діагностика</span></div></div>
+    </div></section>
+
+    <section id="gallery"><div class="wrap"><div class="sectionHead"><div><div class="kicker">Реальні фото</div><h2>Express Шина<br>на місці.</h2></div><p>Фото сервісу та робочої зони. Галерею можна замінити на ваші оригінальні фото з Google Maps у фінальній версії.</p></div>
+      <div class="gallery">
+        <a class="photo" href="https://maysterua.com/wp-content/uploads/d188d0b8d0bdd0bed0bcd0bed0bdd182d0b0d0b6express-d188d0b8d0bdd0b0.webp" target="_blank" rel="noopener"><img src="https://maysterua.com/wp-content/uploads/d188d0b8d0bdd0bed0bcd0bed0bdd182d0b0d0b6express-d188d0b8d0bdd0b0.webp" alt="Робоча зона Express Шина"></a>
+        <a class="photo" href="https://maysterua.com/wp-content/uploads/d188d0b8d0bdd0bed0bcd0bed0bdd182d0b0d0b6express-d188d0b8d0bdd0b0-2.webp" target="_blank" rel="noopener"><img src="https://maysterua.com/wp-content/uploads/d188d0b8d0bdd0bed0bcd0bed0bdd182d0b0d0b6express-d188d0b8d0bdd0b0-2.webp" alt="Шиномонтаж Express Шина"></a>
+        <a class="photo" href="https://maysterua.com/wp-content/uploads/d188d0b8d0bdd0bed0bcd0bed0bdd182d0b0d0b6express-d188d0b8d0bdd0b0-3.webp" target="_blank" rel="noopener"><img src="https://maysterua.com/wp-content/uploads/d188d0b8d0bdd0bed0bcd0bed0bdd182d0b0d0b6express-d188d0b8d0bdd0b0-3.webp" alt="Фасад шиномонтажу"></a>
+        <a class="photo" href="https://maysterua.com/wp-content/uploads/d188d0b8d0bdd0bed0bcd0bed0bdd182d0b0d0b6express-d188d0b8d0bdd0b0-4.webp" target="_blank" rel="noopener"><img src="https://maysterua.com/wp-content/uploads/d188d0b8d0bdd0bed0bcd0bed0bdd182d0b0d0b6express-d188d0b8d0bdd0b0-4.webp" alt="Орієнтир біля сервісу"></a>
+      </div>
+    </div></section>
+
+    <section id="reviews"><div class="wrap"><div class="sectionHead"><div><div class="kicker">Відгуки</div><h2>Що пишуть<br>клієнти.</h2></div><p>У відкритих даних картки сервісу відображаються численні позитивні відгуки. Нижче — короткі фрагменти з опублікованих відгуків.</p></div>
+      <div class="reviews">
+        <article class="review"><div class="stars">★★★★★</div><p>«Зробили швидко, акуратно і без зайвого очікування. Хлопці ввічливі, знають свою справу».</p><b>Аліна Цуканова</b><br><small>Google review</small></article>
+        <article class="review"><div class="stars">★★★★★</div><p>«Якісно, швидко та за адекватні гроші. Сучасне обладнання та приємний сервіс».</p><b>Олександр Куценко</b><br><small>Google review</small></article>
+        <article class="review"><div class="stars">★★★★★</div><p>«Роботу виконують швидко та акуратно… Після балансування — жодних проблем з колесами».</p><b>Руслан Пол</b><br><small>Google review</small></article>
+      </div>
+    </div></section>
+
+    <section id="contacts"><div class="wrap"><div class="sectionHead"><div><div class="kicker">Контакти</div><h2>Приїжджайте.</h2></div><p>Працюємо з понеділка по суботу, 08:00–19:00. Неділя — вихідний.</p></div>
+      <div class="contact">
+        <div class="contactCard">
+          <div class="contactRow"><div class="icon">☎</div><div><h4>Телефон</h4><p><a href="tel:+380967124878">+380 96 712 48 78</a></p></div></div>
+          <div class="contactRow"><div class="icon">⌖</div><div><h4>Адреса</h4><p>вул. Вільної Ічкерії, 6а<br>Кривий Ріг</p></div></div>
+          <div class="contactRow"><div class="icon">◷</div><div><h4>Графік</h4><p>Пн–Сб: 08:00–19:00<br>Нд: вихідний</p></div></div>
+          <div class="actions"><a class="btn primary" href="tel:+380967124878">Зателефонувати</a><a class="btn" href="https://www.instagram.com/express_shina/" target="_blank" rel="noopener">Instagram</a></div>
+        </div>
+        <div><iframe class="map" loading="lazy" src="https://www.google.com/maps?q=Шиномонтаж%20Express%20Шина,%20вул.%20Вільної%20Ічкерії,%206а,%20Кривий%20Ріг&output=embed" title="Express Шина на карті"></iframe></div>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="wrap foot"><div><strong>EXPRESS ШИНА</strong> · Кривий Ріг</div><div>© 2026</div></div></footer>
+  <div class="floating"><a class="float tg" href="https://t.me/+380967124878" aria-label="Telegram">↗</a><a class="float call" href="tel:+380967124878" aria-label="Зателефонувати">☎</a></div>
+</body>
+</html>
